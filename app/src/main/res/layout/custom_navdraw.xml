@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lyt_navdraw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBase"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:id="@+id/navDrawProfile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_profile" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <ImageView
+                    android:id="@+id/btnCloseNavDraw"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="23dp"
+                    android:onClick="btnCloseNavdraw"
+                    android:src="@drawable/ic_arrow_back" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/containerInfoUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display"
+                    android:text="Henry Augusta"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display"
+                    android:text="S1 Sistem Informasi"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_display"
+                    android:text="henryyy@gmail.com"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/rs_cardview_half"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <TextView
+                    style="@style/TextViewCommonProfile"
+                    android:layout_marginBottom="17dp"
+                    android:text="Home" />
+
+
+                <TextView
+                    style="@style/TextViewCommonProfile"
+                    android:layout_marginBottom="17dp"
+                    android:text="Notifikasi" />
+
+
+                <TextView
+                    style="@style/TextViewCommonProfile"
+                    android:layout_marginBottom="17dp"
+                    android:text="My Organization" />
+
+
+                <TextView
+                    style="@style/TextViewCommonProfile"
+                    android:layout_marginBottom="17dp"
+                    android:text="Login Entitas" />
+
+                <TextView
+                    android:id="@+id/ndBtnProfile"
+                    style="@style/TextViewCommonProfile"
+                    android:layout_marginBottom="27dp"
+                    android:text="Profile" />
+
+
+                <TextView
+                    style="@style/TextViewCommonProfile"
+                    android:layout_marginBottom="17dp"
+                    android:drawableTint="@color/colorBase"
+                    android:text="About This App" />
+
+                <TextView
+                    style="@style/TextViewCommonProfile"
+                    android:layout_marginBottom="17dp"
+                    android:text="Bantuan / Hubungi Kami" />
+
+                <TextView
+                    style="@style/TextViewCommonProfile"
+                    android:text="Log Out" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lyt_navdraw_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:orientation="vertical">
+        <!--        android:background="#80ffffff">-->
+
+
+    </LinearLayout>
+
+</LinearLayout>
